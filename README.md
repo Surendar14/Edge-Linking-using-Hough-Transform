@@ -1,28 +1,25 @@
-Edge-Linking-using-Hough-Transform
-Aim:
+# Edge-Linking-using-Hough-Transform
+## Aim:
 To write a Python program to detect the lines using Hough Transform.
 
-Software Required:
+## Software Required:
 Anaconda - Python 3.7
 
-Algorithm:
-Step1:
+## Algorithm:
+### Step1:
 Import all the necessary modules for the program.
-
-Step2:
+### Step2:
 Load a image using imread() from cv2 module.
-
-Step3:
+### Step3:
 Convert the image to grayscale.
-
-Step4:
+### Step4:
 Using Canny operator from cv2,detect the edges of the image.
-
-Step5:
+### Step5:
 Using the HoughLinesP(),detect line co-ordinates for every points in the images.Using For loop,draw the lines on the found co-ordinates.Display the image.
 
-Program:
-~~~
+## Program:
+```Python
+
 # Read image and convert it to grayscale image
 import cv2
 import numpy as np
@@ -68,16 +65,19 @@ for line in lines:
 plt.imshow(image)
 plt.title('HOUGH')
 plt.axis('off')
-~~~
-Output
-Input image and grayscale image
-o1
 
-Canny Edge detector output
-o2
 
-Display the result of Hough transform
-o3
+```
+## Output
 
-Result:
-Thus the program is written with python and OpenCV to detect lines using Hough transform.
+### Input image and grayscale image
+![o1](https://user-images.githubusercontent.com/75235747/169493606-8f0fb1af-3dd1-49e0-8a53-79db158ad4cb.JPG)
+
+### Canny Edge detector output
+![o2](https://user-images.githubusercontent.com/75235747/169493667-1cfc01e1-3a38-4c57-b367-53bd2b2a9648.JPG)
+
+### Display the result of Hough transform
+![o3](https://user-images.githubusercontent.com/75235747/169493832-841d647b-7f58-449b-ad2f-652e99c5b662.JPG)
+
+## Result:
+Thus the program is written with python and OpenCV to detect lines using Hough transform. 
